@@ -1,0 +1,6 @@
+{
+  "name": "KONTARA",
+  "description": "Aplikasi pengelolaan penyusunan konten kehumasan berbasis siklus iteratif: Plan, Manage, Communicate.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

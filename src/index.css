@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-logo: "Playfair Display", Georgia, serif;
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-pastel-pink: #F6E4EE;
+  --color-pastel-pink-deep: #EED0E1;
+  --color-dusty-purple: #8A657C;
+  --color-dusty-purple-dark: #634558;
+  --color-plum-ink: #4A3542;
+  --color-sage-green: #7B9980;
+  --color-sage-soft: #DCE9DD;
+  --color-sage-deep: #5B7860;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-logo {
+    font-family: var(--font-logo);
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.kontara-gradient-canvas {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8EBF2 28%, #F4E2EC 65%, #FAF5F8 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
